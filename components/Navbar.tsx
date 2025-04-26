@@ -18,7 +18,7 @@ export function Navbar() {
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center space-x-6">
           <Link href="/">Home</Link>
-          <Link href="/products">Products</Link>
+          {/* <Link href="/products">Products</Link> */}
           <Link href="/contact">Contact</Link>
         </nav>
 
@@ -47,7 +47,7 @@ export function Navbar() {
                 Home
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/products"
                 className="block py-2"
@@ -55,7 +55,7 @@ export function Navbar() {
               >
                 Products
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 href="/contact"

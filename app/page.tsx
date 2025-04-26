@@ -21,12 +21,12 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link href="/products">
+                {/* <Link href="/products">
                   <Button className="px-8 bg-[#F78C2C] hover:bg-[#F78C2C]/90">
                     Browse Products
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
-                </Link>
+                </Link> */}
                 <Link href="/contact">
                   <Button variant="outline" className="px-8 text-[#0A9A9F] border-[#0A9A9F] hover:bg-[#0A9A9F]/10">
                     Contact Us
@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* Featured Products */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+      {/* <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -137,14 +137,14 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }
 
 function CategoryCard({ title, description, href , image}: { title: string; description: string; href: string ,image: string }) {
   return (
-    <Link href={href} className="group">
+    // <Link href={href} className="group">
       <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm transition-all hover:shadow-md">
         
           <Image
@@ -159,7 +159,7 @@ function CategoryCard({ title, description, href , image}: { title: string; desc
           <p className="text-sm text-gray-500">{description}</p>
         </div>
       </div>
-    </Link>
+    // </Link>
   )
 }
 
